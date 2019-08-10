@@ -1,0 +1,20 @@
+import java.util.*;
+import java.lang.*;
+public class Main
+{
+ public static void main(String args[])
+ {
+  int price,per,amt;
+  Scanner sc=new Scanner(System.in);
+  price=sc.nextInt();
+  per=sc.nextInt();
+  amt=price;
+  while(price>1)
+  {
+      price=price-(price*per/100);
+   amt=amt+price;
+   
+   }
+   System.out.println(amt);
+ }
+}
